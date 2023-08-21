@@ -16,8 +16,10 @@ Category.init(
     category_name: {
       type: DataTypes.STRING,
       allowNull: false,
+    }
   },
-    sequelize,
+  {
+    sequelize,  // This is the Sequelize instance
     timestamps: false,
     freezeTableName: true,
     underscored: true,
