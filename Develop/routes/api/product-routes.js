@@ -79,6 +79,7 @@ router.post('/', (req, res) => {
 
 // update product
 router.put('/:id', (req, res) => {
+  console.log("Inside PUT /:id route for products");
   // update product data
   Product.update(req.body, {
     where: {
