@@ -5,11 +5,18 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // get all products
 router.get('/', async (req, res) => {
-  // find all products
-  // be sure to include its associated Category and Tag data
   try {
     const productData = await Product.findAll({
-      include: [{ model: Category }, { model: Tag, through: ProductTag }]
+      include: [
+        { 
+          model: Category 
+        }, 
+        { 
+          model: Tag, 
+          as: 'tags', // This might be needed if you've defined an alias in your association
+          through: ProductTag 
+        }
+      ]
     });
     res.status(200).json(productData);
   } catch (err) {
@@ -39,6 +46,7 @@ router.get('/:id', async (req, res) => {
 
 // create new product
 router.post('/', (req, res) => {
+  console.log("Received request body:", req.body);
   /* req.body should look like this...
     {
       product_name: "Basketball",
