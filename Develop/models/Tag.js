@@ -15,8 +15,12 @@ Tag.init(
     },
     tag_name: {
       type: DataTypes.STRING,
+      allowNull: false,  // This ensures that the tag_name cannot be null
+      validate: {
+        notEmpty: true  // This ensures that the tag_name is not an empty string
+      }
+    }    
     },
-  },
   {
     sequelize,
     timestamps: false,
