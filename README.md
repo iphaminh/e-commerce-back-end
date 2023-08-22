@@ -53,6 +53,9 @@ Categories (Similarly)
 
 Tags (Similarly)
 
+## Walkthrough Video
+
+https://drive.google.com/file/d/1nh8vEWX8rThPGrsXZg57zHcuLLxOFlO4/view
 
 ## Testing
 
