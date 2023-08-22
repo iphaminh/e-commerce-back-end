@@ -50,9 +50,6 @@ PUT /api/products/:id: Update a product by ID.
 DELETE /api/products/:id: Delete a product by ID.
 Categories
 
-## Tags
-
-(Add similar endpoints for tags)
 
 ## Testing
 
