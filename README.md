@@ -48,7 +48,10 @@ GET /api/products/:id: Fetch a single product by ID.
 POST /api/products: Add a new product.
 PUT /api/products/:id: Update a product by ID.
 DELETE /api/products/:id: Delete a product by ID.
-Categories
+
+Categories (Similarly)
+
+Tags (Similarly)
 
 
 ## Testing
